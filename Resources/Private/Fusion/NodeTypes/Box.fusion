@@ -1,0 +1,14 @@
+prototype(Ambit.Site:Box) < prototype(Neos.Neos:Content) {
+    templatePath = 'resource://Ambit.Site/Private/Templates/NodeTypes/Box.html'
+    columnContent = Neos.Neos:ContentCollection
+    columnContent {
+        nodePath = 'column0'
+    }
+    centering = ${q(node).property('centering')}
+    color = ${q(node).property('color')}
+    backgroundImage = ${q(node).property('backgroundImage')}
+    backgroundSize = ${q(node).property('backgroundSize')}
+    backgroundPosition = ${q(node).property('backgroundPosition')}
+    artificialHeight = ${q(node).property('artificialHeight')}
+    applyHeight = ${q(node).property('applyHeight')}
+}

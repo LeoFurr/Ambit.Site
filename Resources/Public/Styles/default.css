@@ -4,7 +4,10 @@ Default Stylesheet:
 Created By:
     Maciej Necki
 Contents:
+    - CSS Variables
+    - Color Applicators
     - File Scope
+    - Boudning boxes
     - Typography
     - Lists
     - Buttons
@@ -12,6 +15,43 @@ Contents:
     - Images
     - Mobile Optimisations
 -------------------------- */
+
+/* -------------------------- CSS Variables */
+
+:root {
+    --theme-color: #0b0c0d;
+    --tint-color: #cc4f14;
+    --accent-color: #e6510b;
+    --accent-alt-color: #272a2e;
+    --text-color-light: #0b0c0d;
+    --text-color-dark: #f7f7f7
+}
+
+/* -------------------------- Color Applicators */
+
+.--theme-color {
+    background: var(--theme-color);
+    color: var(--text-color-dark);
+}
+
+.--tint-color {
+    background: var(--tint-color);
+    color: var(--text-color-dark)
+}
+
+.--accent-color {
+    background: var(--accent-color);
+    color: var(--text-color-dark)
+}
+
+.--accent-alt-color {
+    background: var(--accent-alt-color);
+    color: var(--text-color-dark)
+}
+
+.--blue {
+    background: #085fac;
+}
 
 /* -------------------------- File Scope */
 
@@ -27,11 +67,11 @@ body {
     margin: 0 auto;
     margin-bottom: 130px;
 
-    background-color: #f0f3f7;
+    background-color: #f2f2f2;
 
-    color: #0b0c0d;
+    color: var(--text-color-light);
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7em;
     word-wrap: break-word;
 
@@ -43,7 +83,36 @@ body {
     transition:.3s;
 
     /*For footer allignment, substracted number must be footer height.*/
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh + 50px);
+}
+
+/* -------------------------- Bounding Boxes */
+
+.--left-wrapper {
+    text-align: left;
+}
+
+.--center-wrapper {
+    text-align: center;
+    align-content: center;
+}
+
+.--right-wrapper {
+    text-align: right;
+}
+
+.container-box {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+@media(max-width: 830px) {
+    .container-box {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 /* -------------------------- Typography */
@@ -59,7 +128,7 @@ pre {
 
 code {
     font-family: Consolas, monospace, Monaco;
-    color: #005ba6;
+    color: var(--accent-color);
     border: 1px solid #b6babf;
     padding:10px;
     background-color:#fff;
@@ -67,7 +136,7 @@ code {
 }
 
 mark {
-    background-color: #5aaef2;
+    background-color: var(--accent-color);
     padding: 3px;
     border-radius: 3px;
 }
@@ -109,7 +178,7 @@ h5 {
 
 a {
     text-decoration: none;
-    color: #291e69;
+    color: var(--tint-color);
     cursor: pointer;
 
     -o-transition: .3s;
@@ -121,7 +190,7 @@ a {
 
 a:hover, a:active, a:focus {
     text-decoration: underline;
-    color: #100a33;
+    color: var(--accent-color);
     cursor: pointer;
 
     -o-transition: .3s;
@@ -167,8 +236,8 @@ button {
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #291e69;
     color: #fff;
+    background: var(--theme-color);
     cursor: pointer;
 
     -o-transition:0.2s;
@@ -177,18 +246,18 @@ button {
     -webkit-transition:0.2s;
     transition:0.2s;
 
-    box-shadow: 0 1px 2px #141F33;
+    box-shadow: 0 1px 2px #333333;
 }
 
 button:hover {
     transform: translateX(1px);
-    background: #090426;
+    background: var(--theme-color);
     cursor: pointer;
 }
 
 button:active {
     transform: translateX(3px);
-    background: #090426;
+    background: var(--theme-color);
     cursor: pointer;
 }
 
