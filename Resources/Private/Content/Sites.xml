@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
- <site name="ambitlife.com.au" state="1" siteResourcesPackageKey="Ambitlife.Site" siteNodeName="ambitlife-site">
+ <site name="ambitlife.com.au" state="1" siteResourcesPackageKey="Ambit.Site" siteNodeName="ambit-site">
   <nodes formatVersion="2.0">
-   <node nodeName="ambitlife-site">
-    <variant workspace="live" nodeType="Ambitlife.Site:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+   <node nodeName="ambit-site">
+    <variant workspace="live" nodeType="Ambit.Site:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
      <dimensions>
      
       <language>en_US</language>

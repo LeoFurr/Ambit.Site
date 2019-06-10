@@ -1,6 +1,6 @@
 'Ambit.Site:StandardButton':
-  superTypes:
-    'Neos.Neos:Content': TRUE
+    superTypes:
+      'Neos.Neos:Content': TRUE
     ui:
       inspector:
         groups:
