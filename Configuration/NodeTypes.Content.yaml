@@ -1,0 +1,13 @@
+'Ambit.Site:StandardButton':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    label: 'Standard Button'
+    group: 'general'
+  properties:
+    title:
+      type: string
+      defaultValue: 'Button Title'
+      ui:
+        label: 'Title'
+        inlineEditable: TRUE

@@ -1,0 +1,5 @@
+prototype(Ambit.Site:StandardButton) < prototype(Neos.Neos:Content) {
+    templatePath = 'resource://Ambit.Site/Private/Templates/NodeTypes/StandardButton.html'
+
+    title = ${q(node).property('title')}
+}
