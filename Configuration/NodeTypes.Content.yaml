@@ -51,7 +51,7 @@
                   label: 'Blue'
 
 # Container Box for elements
-'Ambitlife.Site:Box':
+'Ambit.Site:Box':
   superTypes:
     'Neos.Neos:Content': TRUE
   ui:
