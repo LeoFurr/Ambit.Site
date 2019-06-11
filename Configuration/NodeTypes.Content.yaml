@@ -1,4 +1,4 @@
-'Ambit.Site:StandardButton':
+'Ambit.Site:AmbitButton':
     superTypes:
       'Neos.Neos:Content': TRUE
     ui:
@@ -51,7 +51,7 @@
                   label: 'Blue'
 
 # Container Box for elements
-'Ambit.Site:Box':
+'Ambit.Site:AmbitBox':
   superTypes:
     'Neos.Neos:Content': TRUE
   ui:
