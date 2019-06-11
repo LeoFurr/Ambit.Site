@@ -8,7 +8,7 @@
             label: 'Options'
             icon: 'icon-adjust'
             position: 1
-      label: 'Standard Button'
+      label: 'Standard Ambit Button'
       icon: 'icon-toggle-on'
       group: 'general'
       position: 3
@@ -56,7 +56,7 @@
     'Neos.Neos:Content': TRUE
   ui:
     group: structure
-    label: Box
+    label: Ambit Box
     icon: icon-square
     inlineEditable: true
     inspector:

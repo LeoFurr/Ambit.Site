@@ -1,5 +1,5 @@
-prototype(Ambit.Site:Box) < prototype(Neos.Neos:Content) {
-    templatePath = 'resource://Ambit.Site/Private/Templates/NodeTypes/Box.html'
+prototype(Ambit.Site:AmbitBox) < prototype(Neos.Neos:Content) {
+    templatePath = 'resource://Ambit.Site/Private/Templates/NodeTypes/AmbitBox.html'
     columnContent = Neos.Neos:ContentCollection
     columnContent {
         nodePath = 'column0'
