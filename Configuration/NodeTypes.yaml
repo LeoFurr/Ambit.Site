@@ -1,0 +1,10 @@
+'Ambit.Site:HomePage':
+  superTypes:
+    'Neos.NodeTypes:Page': TRUE
+  ui:
+    label: 'Ambit Homepage'
+  childNodes:
+    header:
+      type: 'Neos.Neos:ContentCollection'
+    footer:
+      type: 'Neos.Neos:ContentCollection'
