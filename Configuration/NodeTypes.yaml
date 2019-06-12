@@ -1,6 +1,6 @@
 'Ambit.Site:HomePage':
   superTypes:
-    'Ambit.Site:Page': TRUE
+    'Neos.NodeTypes:Page': TRUE
   ui:
     label: 'Ambit Homepage'
   childNodes:

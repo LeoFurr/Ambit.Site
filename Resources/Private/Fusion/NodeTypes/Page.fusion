@@ -14,14 +14,15 @@ prototype(Ambit.Site:Page) < prototype(Ambit.Site:DefaultPage) {
             }
 
             header = Neos.Neos:ContentCollection {
-                nodePath = ${q(site).find('header').property('_path')}
-                collection = ${q(site).find('Page').children('Header').children()}
+                nodePath = ${q(site).find('footer').property('_path')}
+                collection = ${q(site).find('Navigation').children()}
             }
 
-            footer = Neos.Neos:ContentCollection {
+            header = Neos.Neos:ContentCollection {
                 nodePath = ${q(site).find('footer').property('_path')}
-                collection = ${q(site).find('Page').children('Footer').children()}
+                collection = ${q(site).find('Footer').children()}
             }
+
             // An optional, additional "Sidebar" content collection. Uncomment the part below if you want a second
             // content area in your page template, e.g. for a sidebar (the name can be chosen freely of course)
             // Also make sure you've commented in the "sidebar" part in "Configuration/NodeTypes.Document.Page.yaml".
