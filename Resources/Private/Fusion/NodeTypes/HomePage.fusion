@@ -1,4 +1,4 @@
-prototype(Ambit.Site:HomePage) < prototype(Ambit.Site:DefaultPage) {
+prototype(Ambit.Site:HomePage) {
 
     header = Neos.Neos:ContentCollection {
         nodePath = 'header'
