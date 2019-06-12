@@ -18,7 +18,7 @@ prototype(Ambit.Site:Page) < prototype(Ambit.Site:DefaultPage) {
                 collection = ${q(site).find('Navigation').children()}
             }
 
-            header = Neos.Neos:ContentCollection {
+            footer = Neos.Neos:ContentCollection {
                 nodePath = ${q(site).find('footer').property('_path')}
                 collection = ${q(site).find('Footer').children()}
             }

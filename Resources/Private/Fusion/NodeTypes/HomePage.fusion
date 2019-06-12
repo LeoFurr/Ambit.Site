@@ -1,10 +1,13 @@
-prototype(Ambit.Site:HomePage) {
+prototype(Ambit.Site:HomePage) < prototype(Ambit.Site:Page) {
+    body {
+        content {
+            header = Neos.Neos:ContentCollection {
+                nodePath = 'header'
+            }
 
-    header = Neos.Neos:ContentCollection {
-        nodePath = 'header'
-    }
-
-    footer = Neos.Neos:ContentCollection {
-        nodePath = 'footer'
+            footer = Neos.Neos:ContentCollection {
+                nodePath = 'footer'
+            }
+        }
     }
 }
