@@ -9,7 +9,7 @@ Neos:
                 path: '404'
     mvc:
       routes:
-        Ambitlife.Site: true
+        Ambit.Site: true
         'Neos.Neos':
           variables:
             # Remove .html from sites
