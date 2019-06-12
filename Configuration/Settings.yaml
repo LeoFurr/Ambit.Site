@@ -16,4 +16,4 @@ Neos:
             'defaultUriSuffix': ''
   Form:
     yamlPersistenceManager:
-      savePath: 'resource://Ambitlife.Site/Private/Form/'
+      savePath: 'resource://Ambit.Site/Private/Form/'
