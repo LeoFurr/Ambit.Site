@@ -1,9 +1,0 @@
-header = Neos.Neos:ContentCollection {
-    nodePath = ${q(site).find('header').property('_path')}
-    collection = ${q(site).find('Page').children('header').children()}
-}
-
-footer = Neos.Neos:ContentCollection {
-    nodePath = ${q(site).find('footer').property('_path')}
-    collection = ${q(site).find('Page').children('footer').children()}
-}
