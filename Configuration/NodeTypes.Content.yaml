@@ -1,3 +1,4 @@
+# Standard styled button
 'Ambit.Site:AmbitButton':
     superTypes:
       'Neos.Neos:Content': TRUE
@@ -156,7 +157,7 @@
           group: 'advanced'
           editor: 'Neos.Neos/Inspector/Editors/TextFieldEditor'
           editorOptions:
-            placeholder: 'eg. 100'
+            placeholder: 'eg. center center'
   childNodes:
     column0:
       type: 'Neos.Neos:ContentCollection'
