@@ -2,6 +2,9 @@
 # by Neos. It works exactly the same as the generic "Neos.NodeTypes:Page". You can customize this
 # to your needs or remove it if you do not need a custom page type.
 'Ambit.Site:HomePage':
+  constraints:
+    nodeTypes:
+      'Ambit.Site:HomePage': false
   superTypes:
     'Neos.NodeTypes:Page': TRUE
   ui:
@@ -13,6 +16,9 @@
     footer:
       type: 'Neos.Neos:ContentCollection'
 'Ambit.Site:Page':
+  constraints:
+    nodeTypes:
+      'Ambit.Site:HomePage': false
   superTypes:
     'Neos.Neos:Document': true
   ui:
