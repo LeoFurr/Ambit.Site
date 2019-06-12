@@ -33,11 +33,13 @@
 <f:section name="body">
 
 	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Menu-->
-	<f:if condition="{neos:rendering.inBackend()}">
-		<f:else>
-			<f:render partial="Navigation" arguments="{_all}" />
-		</f:else>
-	</f:if>
+	<!--<f:if condition="{neos:rendering.inBackend()}">-->
+		<!--<f:else>-->
+			<!--<f:render partial="Navigation" arguments="{_all}" />-->
+		<!--</f:else>-->
+	<!--</f:if>-->
+
+	<f:render partial="Navigation" arguments="{_all}" />
 
 	<!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Content-->
 	<div class="content">
@@ -45,12 +47,14 @@
 	</div>
 
 	<!--################################################################################### Footer-->
-	<f:if condition="{neos:rendering.inBackend()}">
-		<f:render partial="Footer" arguments="{_all}" />
-		<f:else>
-			<f:render partial="Footer" arguments="{_all}" />
-		</f:else>
-	</f:if>
+	<!--<f:if condition="{neos:rendering.inBackend()}">-->
+		<!--<f:render partial="Footer" arguments="{_all}" />-->
+		<!--<f:else>-->
+			<!--<f:render partial="Footer" arguments="{_all}" />-->
+		<!--</f:else>-->
+	<!--</f:if>-->
+
+	<f:render partial="Footer" arguments="{_all}" />
 </f:section>
 
 <!--::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Scripts-->

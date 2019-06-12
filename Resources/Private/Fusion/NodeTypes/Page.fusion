@@ -12,6 +12,14 @@ prototype(Ambit.Site:Page) < prototype(Ambit.Site:DefaultPage) {
             main = Neos.Neos:PrimaryContent {
                 nodePath = 'main'
             }
+
+            header = Neos.Neos:ContentCollection {
+                nodePath = 'header'
+            }
+
+            footer = Neos.Neos:ContentCollection {
+                nodePath = 'footer'
+            }
             // An optional, additional "Sidebar" content collection. Uncomment the part below if you want a second
             // content area in your page template, e.g. for a sidebar (the name can be chosen freely of course)
             // Also make sure you've commented in the "sidebar" part in "Configuration/NodeTypes.Document.Page.yaml".
