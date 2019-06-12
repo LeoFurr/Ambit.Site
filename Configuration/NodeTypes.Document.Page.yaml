@@ -1,6 +1,6 @@
-# This is a custom document node type which has been auto-generated for your site package
-# by Neos. It works exactly the same as the generic "Neos.NodeTypes:Page". You can customize this
-# to your needs or remove it if you do not need a custom page type.
+# Custom pages operating in the document.
+
+# HomePage - only one instance allowed, defines header and footer.
 'Ambit.Site:HomePage':
   constraints:
     nodeTypes:
@@ -8,13 +8,16 @@
   superTypes:
     'Neos.NodeTypes:Page': TRUE
   ui:
+    icon: 'icon-home'
     label: 'Ambit Homepage'
-    position: 0
+    position: 2
   childNodes:
     header:
       type: 'Neos.Neos:ContentCollection'
     footer:
       type: 'Neos.Neos:ContentCollection'
+
+# Standard page.
 'Ambit.Site:Page':
   constraints:
     nodeTypes:
@@ -28,10 +31,3 @@
   childNodes:
     main:
       type: 'Neos.Neos:ContentCollection'
-
-# If you need more than just the "main" content area you can uncomment the snippet below. It will add a "sidebar" area
-# to your pages. You can add as many areas as you like, still only those that are rendered in your Fusion code and
-# template are visible on your page.
-
-#    'sidebar':
-#      type: 'Neos.Neos:ContentCollection'

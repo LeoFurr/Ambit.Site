@@ -1,3 +1,5 @@
+// Fusion defining additional conent areas of HomePage NodeType.
+
 prototype(Ambit.Site:HomePage) < prototype(Ambit.Site:Page) {
     body {
         content {
