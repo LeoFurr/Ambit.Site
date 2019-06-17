@@ -18,6 +18,7 @@ Contents:
 
 div.columns-50-50 > div, div.columns-75-25 > div, div.columns-25-75 > div, div.columns-66-33 > div, div.columns-33-66 > div, div.columns-33-33-33 > div, div.columns-25-25-25-25 > div {
     vertical-align: text-top;
+    top: -4px;
 }
 
 @media(min-width: 830px) {
@@ -74,6 +75,7 @@ div.columns-50-50 > div, div.columns-75-25 > div, div.columns-25-75 > div, div.c
 div.columns-33-33-33 > div.column {
     display: inline-block;
     width: 33.33333333333333333333%;
+    top: -4px;
 }
 
 /* -------------------------- Columns Quadruple */
@@ -81,6 +83,7 @@ div.columns-33-33-33 > div.column {
 div.columns-25-25-25-25 > div.column {
     display: inline-block;
     width: 25%;
+    top: -4px
 }
 
 /* -------------------------- Columns Mobile Optimisations */
